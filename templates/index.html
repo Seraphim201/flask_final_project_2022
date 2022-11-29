@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Прогнозирование параметров сварного шва</title>
+    <link href="{{ url_for('static',filename='styles/index.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="content">
+        <div class="title">
+            <p>Прогнозирование параметров сварного шва при электронно-лучевой сварке в глубоком вакууме</p>
+        </div>
+        <div class="info">
+            <p>Введите параметры для прогнозирования<br>(для разделения целой и дробной части используйте точку ("."))</p>
+        </div>
+        <form action="" method="post">
+            <div class="input">
+                <label for="iw">Величина сварочного тока (IW): </label><br>
+            </div>
+            <div class="edit">
+                <input type="text" name="iw" required>
+            </div>
+            <div class="input">
+                <label for="if">Ток фокусировки электронного пучка (IF): </label>
+            </div>
+            <div class="edit">
+                <input type="text" name="if" required>
+            </div>
+            <div class="input">
+                <label for="vw">Скорость сварки (VW): </label>
+                
+            </div>
+            <div class="edit">
+                <input type="text" name="vw" required>
+            </div>
+            <div class="input">
+                <label for="fp">Расстояние от поверхности образцов до электронно-оптической системы (FP): </label> 
+            </div>
+            <div class="edit">
+                <input type="text" name="fp" required>
+            </div>
+            <div class="send">
+                <input type="submit" class="send-button" value="Выполнить прогноз">
+            </div>
+            <div class="result">
+                <div class="depth" >
+                    <div>
+                        <p>Глубина (Depth):</p>
+                    </div>
+                    <div>
+                        <p>{{ depth }}</p>
+                    </div>
+                </div>
+                <div class="width">
+                    <div>
+                        <p>Ширина (Width):</p>
+                    </div>
+                    <div>
+                        <p>{{ width }}</p>
+                    </div>
+                </div>
+            </div>               
+        </form>
+    </div>
+
+</body>
+</html>

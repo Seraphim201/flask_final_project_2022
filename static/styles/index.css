@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+}
+.content {
+    width: 40%;
+    margin: 100px auto auto;
+    font-family: Consolas, serif;
+    background-color: white;
+    border: 1pt solid #32475E;
+}
+.title {
+    height: 80px;
+    text-align: center;
+    background-color: #32475E;
+}
+.title > p {
+    color: white;
+    font-size: 20pt;
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info {
+    height: 80px;
+    text-align: center;
+    border-bottom: 1pt solid #32475E;
+}
+.info > p {
+    font-size: 12pt;
+    padding-top: 8px;
+    font-weight: bold;
+}
+label {
+    padding-left: 10px;
+    font-weight: bold;
+}
+.input {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.send {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+.send-button {
+    width: 200px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    font-family: Consolas, serif;
+    font-size: 13pt;
+}
+.input > p {
+    padding-left: 10px;
+}
+.edit {
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.result {
+    overflow: hidden;
+    border-top: 1pt solid #32475E;
+}
+.depth, .width {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+}
